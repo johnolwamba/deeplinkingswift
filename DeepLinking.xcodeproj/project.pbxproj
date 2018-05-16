@@ -14,6 +14,7 @@
 		5820727820ABFFB900523F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5820727620ABFFB900523F53 /* LaunchScreen.storyboard */; };
 		5820728320ABFFBA00523F53 /* DeepLinkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820728220ABFFBA00523F53 /* DeepLinkingTests.swift */; };
 		5820728E20ABFFBA00523F53 /* DeepLinkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820728D20ABFFBA00523F53 /* DeepLinkingUITests.swift */; };
+		5820729C20AC01D400523F53 /* DeepLinkedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820729B20AC01D400523F53 /* DeepLinkedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5820728920ABFFBA00523F53 /* DeepLinkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepLinkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5820728D20ABFFBA00523F53 /* DeepLinkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkingUITests.swift; sourceTree = "<group>"; };
 		5820728F20ABFFBA00523F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5820729B20AC01D400523F53 /* DeepLinkedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkedVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				5820727420ABFFB900523F53 /* Assets.xcassets */,
 				5820727620ABFFB900523F53 /* LaunchScreen.storyboard */,
 				5820727920ABFFB900523F53 /* Info.plist */,
+				5820729B20AC01D400523F53 /* DeepLinkedVC.swift */,
 			);
 			path = DeepLinking;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				5820727020ABFFB600523F53 /* ViewController.swift in Sources */,
 				5820726E20ABFFB600523F53 /* AppDelegate.swift in Sources */,
+				5820729C20AC01D400523F53 /* DeepLinkedVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

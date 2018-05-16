@@ -40,7 +40,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        print("Came here", options)
+        let urlPath : String = (url.path as String?)!
+        let urlHost : String = (url.host as String?)!
+        print(url.query?.split(separator: "&")[0])
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if(!urlHost.hasPrefix("s")){
+            print("Host is incorrect")
+            return false
+        }
+        
+        if(urlPath.hasPrefix("/i")){
+            let innerPage: DeepLinkedVC = mainStoryboard.instantiateViewController(withIdentifier: "DeepLinkedVC") as! DeepLinkedVC
+            self.window?.rootViewController = innerPage
+            self.window?.makeKeyAndVisible()
+        }
+        return true
+    }
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        print("Shortcut tapped")
+    }
 }
 
